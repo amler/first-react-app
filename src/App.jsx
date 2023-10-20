@@ -3,10 +3,13 @@ import Greeter from './Greeter';
 import Die from './Die';
 import List from './List';
 import DoubleRoll from './DoubleRoll';
+import Heading from './Heading';
 
 function App() {
   return (
     <div>
+      <Heading color='magenta' text='Welcome'/>
+      <Heading color='magenta' text='Another h1 for the hell of it' fontSize='30px'/>
       {/* <Greeter person="Bill"/>
       <Greeter from="Will"/>
       <Greeter/>
