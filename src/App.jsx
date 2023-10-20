@@ -2,6 +2,7 @@ import './App.css'
 import Greeter from './Greeter';
 import Die from './Die';
 import List from './List';
+import DoubleRoll from './DoubleRoll';
 
 function App() {
   return (
@@ -12,8 +13,10 @@ function App() {
       <Die numSides={20}/>
       <Die/>
       <Die numSides={8}/> */}
-      <List values={[1,2,3]}/>
-      
+      {/* <List values={[1,2,3]}/> */}
+      <DoubleRoll/>
+      <DoubleRoll/>
+      <DoubleRoll/>
     </div>
   );
 }
