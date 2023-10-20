@@ -5,14 +5,14 @@ import Die from './Die';
 function App() {
   return (
     <div>
-      {/* <Greeter person="Bill" from="Heather"/>
-      <Greeter person="Ted!" from="Will"/> */}
+      <Greeter person="Bill"/>
+      <Greeter from="Will"/>
+      <Greeter/>
       <Die numSides={20}/>
-      <Die numSides={10}/>
+      <Die/>
       <Die numSides={8}/>
-
     </div>
-  ) 
+  );
 }
 
 export default App
