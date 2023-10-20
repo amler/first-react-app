@@ -4,6 +4,7 @@ import Die from './Die';
 import List from './List';
 import DoubleRoll from './DoubleRoll';
 import Heading from './Heading';
+import ColorList from './ColorList';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <DoubleRoll/>
       <DoubleRoll/>
       <DoubleRoll/>
+      <ColorList colors={["red", "pink", "orange", "lime", "blue"]} />
     </div>
   );
 }
