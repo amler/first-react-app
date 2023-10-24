@@ -1,0 +1,13 @@
+import ShoppingListItem from './ShoppingListItem';
+
+function ShoppingList ({items}) {
+    return (
+        <ul>
+            {items.map((i) => (
+                <ShoppingListItem item={i.name} quantity={i.quantity} completed={i.completed}/>
+            ))}
+        </ul>
+    );
+}
+
+export default ShoppingList;
