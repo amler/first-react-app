@@ -9,6 +9,7 @@ import './App.css'
 // import ShoppingList from './ShoppingList';
 // import PropertyList from './PropertyList';
 import Clicker from './Clicker';
+import Form from './Form';
 
 // const data = [
 //   {name: 'eggs', quantity: 12, completed: false },
@@ -29,6 +30,7 @@ const properties = [
 function App() {
   return (
     <div> 
+      <Form />
       <Clicker />
       {/* <PropertyList properties={properties} /> */}
       {/* <ShoppingList items={data}/> */}
