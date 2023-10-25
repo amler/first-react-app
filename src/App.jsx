@@ -7,7 +7,8 @@ import './App.css'
 // import ColorList from './ColorList';
 // import Slots from './Slots';
 // import ShoppingList from './ShoppingList';
-import PropertyList from './PropertyList';
+// import PropertyList from './PropertyList';
+import Clicker from './Clicker';
 
 // const data = [
 //   {name: 'eggs', quantity: 12, completed: false },
@@ -28,7 +29,8 @@ const properties = [
 function App() {
   return (
     <div> 
-      <PropertyList properties={properties} />
+      <Clicker />
+      {/* <PropertyList properties={properties} /> */}
       {/* <ShoppingList items={data}/> */}
       {/* <Slots val1="🔔" val2="💩" val3="🍒"/> */}
       {/* <Heading color='magenta' text='Welcome'/>
