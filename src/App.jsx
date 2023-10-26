@@ -11,7 +11,7 @@ import './App.css'
 // import Clicker from './Clicker';
 // import Form from './Form';
 import Counter from './Counter';
-
+import Toggler from './Toggler';
 // const data = [
 //   {name: 'eggs', quantity: 12, completed: false },
 //   {name: 'milk', quantity: 1, completed: true },
@@ -31,7 +31,8 @@ const properties = [
 function App() {
   return (
     <div> 
-      <Counter />
+      <Toggler/>
+      {/* <Counter /> */}
       {/* <Form />
       <Clicker message="Hi!!!" buttonText="Please Click Me"/>
       <Clicker message="Please stop clicking me!" buttonText="Don't Click Me"/> */}
