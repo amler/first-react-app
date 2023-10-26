@@ -8,8 +8,9 @@ import './App.css'
 // import Slots from './Slots';
 // import ShoppingList from './ShoppingList';
 // import PropertyList from './PropertyList';
-import Clicker from './Clicker';
-import Form from './Form';
+// import Clicker from './Clicker';
+// import Form from './Form';
+import Counter from './Counter';
 
 // const data = [
 //   {name: 'eggs', quantity: 12, completed: false },
@@ -30,9 +31,10 @@ const properties = [
 function App() {
   return (
     <div> 
-      <Form />
+      <Counter />
+      {/* <Form />
       <Clicker message="Hi!!!" buttonText="Please Click Me"/>
-      <Clicker message="Please stop clicking me!" buttonText="Don't Click Me"/>
+      <Clicker message="Please stop clicking me!" buttonText="Don't Click Me"/> */}
       {/* <PropertyList properties={properties} /> */}
       {/* <ShoppingList items={data}/> */}
       {/* <Slots val1="🔔" val2="💩" val3="🍒"/> */}
