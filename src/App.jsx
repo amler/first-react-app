@@ -30,28 +30,18 @@ const properties = [
 
 function App() {
   return (
-    <div> 
-      <Toggler/>
-      {/* <Counter /> */}
-      {/* <Form />
-      <Clicker message="Hi!!!" buttonText="Please Click Me"/>
-      <Clicker message="Please stop clicking me!" buttonText="Don't Click Me"/> */}
-      {/* <PropertyList properties={properties} /> */}
-      {/* <ShoppingList items={data}/> */}
-      {/* <Slots val1="🔔" val2="💩" val3="🍒"/> */}
-      {/* <Heading color='magenta' text='Welcome'/>
-      <Heading color='magenta' text='Another h1 for the hell of it' fontSize='30px'/> */}
-      {/* <Greeter person="Bill"/>
-      <Greeter from="Will"/>
-      <Greeter/>
-      <Die numSides={20}/>
-      <Die/>
-      <Die numSides={8}/> */}
-      {/* <List values={[1,2,3]}/> */}
-      {/* <DoubleRoll/>
-      <DoubleRoll/>
-      <DoubleRoll/>
-      <ColorList colors={["red", "pink", "orange", "lime", "blue"]} /> */}
+    <div>
+      <header>
+        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+        <h1>React Essentials</h1>
+        <p>
+          Fundamental React concepts you will need for almost any app you are
+          going to build!
+        </p>
+      </header>
+      <main>
+        <h2>Time to get started!</h2>
+      </main>
     </div>
   );
 }
