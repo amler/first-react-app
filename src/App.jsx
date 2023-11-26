@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import reactImg from './assets/react-core-concepts.png';
 // import Greeter from './Greeter';
 // import Die from './Die';
 // import List from './List';
@@ -28,17 +29,30 @@ const properties = [
   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 ];
 
+const descriptions = ['Fundamental', 'Crucial', 'Core'];
+
+function genRandomInt(max) {
+  return Math.floor(Math.random() * (max + 1));
+}
+
+function Header () {
+  const value = descriptions[genRandomInt(2)];
+  return (
+    <header>
+      <img src={reactImg} alt="Stylized atom" />
+      <h1>React Essentials</h1>
+      <p>
+        {value} React concepts you will need for almost any app you are
+        going to build!
+      </p>
+    </header>
+  );
+}
+
 function App() {
   return (
     <div>
-      <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-        <h1>React Essentials</h1>
-        <p>
-          Fundamental React concepts you will need for almost any app you are
-          going to build!
-        </p>
-      </header>
+     <Header/>
       <main>
         <h2>Time to get started!</h2>
       </main>
