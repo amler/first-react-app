@@ -1,38 +1,22 @@
 import './App.css';
 import reactImg from './assets/react-core-concepts.png';
-// import Greeter from './Greeter';
-// import Die from './Die';
-// import List from './List';
-// import DoubleRoll from './DoubleRoll';
-// import Heading from './Heading';
-// import ColorList from './ColorList';
-// import Slots from './Slots';
-// import ShoppingList from './ShoppingList';
-// import PropertyList from './PropertyList';
-// import Clicker from './Clicker';
-// import Form from './Form';
-import Counter from './Counter';
-import Toggler from './Toggler';
-// const data = [
-//   {name: 'eggs', quantity: 12, completed: false },
-//   {name: 'milk', quantity: 1, completed: true },
-//   {name: 'chicken', quantity: 2, completed: false },
-//   {name: 'carrots', quantity: 4, completed: true },
-// ];
 
-const properties = [
-  { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
-  { id: 129331, name: "Lone Mountain Cabin", rating: 4.8, price: 250 },
-  { id: 129032, name: "Cactus Retreat", rating: 4.75, price: 300 },
-  { id: 129033, name: "Redwood Treehouse Escape", rating: 4.9, price: 120 },
-  { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
-  { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
-];
+import { CORE_CONCEPTS } from './data';
 
 const descriptions = ['Fundamental', 'Crucial', 'Core'];
 
 function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
+}
+
+function CoreConcept (props) {
+  return (
+    <li>
+      <img src={props.img} alt={props.title} />
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+    </li>
+  );
 }
 
 function Header () {
@@ -54,7 +38,32 @@ function App() {
     <div>
      <Header/>
       <main>
-        <h2>Time to get started!</h2>
+        <section id="core-concepts">
+          <h2>Time to get started!</h2>
+          <ul>
+            <CoreConcept 
+              title={CORE_CONCEPTS[0].title}
+              description={CORE_CONCEPTS[0].description}
+              img={CORE_CONCEPTS[0].image}
+            />
+            <CoreConcept 
+              title={CORE_CONCEPTS[1].title}
+              description={CORE_CONCEPTS[1].description}
+              img={CORE_CONCEPTS[1].image}
+            />
+            <CoreConcept 
+              title={CORE_CONCEPTS[2].title}
+              description={CORE_CONCEPTS[2].description}
+              img={CORE_CONCEPTS[2].image}
+            />
+            <CoreConcept 
+              title={CORE_CONCEPTS[3].title}
+              description={CORE_CONCEPTS[3].description}
+              img={CORE_CONCEPTS[3].image}
+            />
+      
+          </ul>
+        </section>
       </main>
     </div>
   );
