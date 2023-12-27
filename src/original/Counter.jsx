@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function Counter() {
     const [num, setNum] = useState(0);
-    const changeNum =() => {
+    const changeNum = () => {
         setNum(num + 1);
     }
     return (
