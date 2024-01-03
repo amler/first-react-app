@@ -22,13 +22,15 @@ function App() {
     </div>);
   }
   return (
-    <div>
+    <>
      <Header/>
       <main>
         <section id="core-concepts">
           <h2>Time to get started!</h2>
           <ul>
-            {CORE_CONCEPTS.map((conceptItem) => <CoreConcepts {...conceptItem} />)}
+            {CORE_CONCEPTS.map((conceptItem) => (
+              <CoreConcepts key={conceptItem.title} {...conceptItem} />
+              ))}
             {/* <CoreConcepts 
               title={CORE_CONCEPTS[0].title}
               description={CORE_CONCEPTS[0].description}
@@ -50,7 +52,7 @@ function App() {
           {tabContent}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
