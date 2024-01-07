@@ -4,10 +4,13 @@ import TabButton from './TabButton/TabButton';
 
 export default function Examples () {
     const [selectedTopic, setSelectedTopic] = useState();
+    
     function handleSelect (selectedButton) {
       setSelectedTopic(selectedButton);
     }
+    
     let tabContent = <p>Please select a topic</p>;
+    
     if (selectedTopic) {
       tabContent = (<div id="tab-content">
         <h3>{EXAMPLES[selectedTopic].title}</h3>
@@ -19,6 +22,7 @@ export default function Examples () {
         </pre>
       </div>);
     }
+    
     return (
         <section id="examples">
           <h2>Examples</h2>
