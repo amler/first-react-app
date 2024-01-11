@@ -3,6 +3,8 @@ import Header from './components/Header';
 import CoreConcepts from './components/CoreConcepts';
 import Examples from './components/Examples';
 import Button from './components/Button/Button';
+import Plus from './components/Icons/Plus';
+import Home from './components/Icons/Home';
 
 function App() {
   return (
