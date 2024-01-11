@@ -13,9 +13,11 @@ function App() {
       <main>
         <CoreConcepts/>
         <Examples />
-        <Button>
-          Click it or ticket
-        </Button>
+        <div style={{backgroundColor: '#eee', padding: '2rem' }}>
+          <Button>
+            Click it or ticket
+          </Button>
+        </div>
       </main>
     </>
   );
