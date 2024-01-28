@@ -174,3 +174,19 @@ main h2 {
   box-shadow: none;
   cursor: not-allowed;
 }
+
+.outline-button {
+  border: 1px solid #2658d6;
+  color: #2658d6;
+}
+
+.outline-button:hover {
+  background: #cbd8fc;
+}
+.text-button {
+  color: #2658d6;
+}
+
+.text-button:hover {
+  background: #cbd8fc;
+}

@@ -17,6 +17,8 @@ function App() {
           <Button>
             Click it or ticket
           </Button>
+          <Button theme="outline">Outline</Button>
+          <Button Icon={Plus}>Add</Button>
         </div>
       </main>
     </>
